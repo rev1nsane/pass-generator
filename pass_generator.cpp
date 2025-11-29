@@ -196,7 +196,7 @@ int menu(){
         std::cout << "1. Generate strong password." << std::endl;
         std::cout << "2. Password have been pwned." << std::endl;
         std::cout << "0. Exit." << std::endl;
-        std::cout << "Input option: ";  std::cin >> opt;
+        std::cout << "Enter option: ";  std::cin >> opt;
         tries++;
     } while ( opt != 1 && opt != 2 && opt != 0);
 
@@ -221,7 +221,7 @@ int main()
     }
     if ( opt == IS_PWNED ) {
         std::string input_password;
-        std::cout << "[+] Insert password: "; std::cin >> input_password;
+        std::cout << "[+] Enter password: "; std::cin >> input_password;
         pass_pwned = pass_is_pwned(input_password);
         print_password(input_password, pass_pwned);
     }
